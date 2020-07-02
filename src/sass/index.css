@@ -1,0 +1,674 @@
+@charset "UTF-8";
+/*申明编码集*/
+html,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px Helvetica, Tahoma, Arial, Hiragino Sans GB, Microsoft YaHei, SimSun, Heiti, sans-serif;
+}
+
+a,
+u {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  /*去掉img下方的间距*/
+  border: none;
+}
+
+input {
+  outline: none;
+  /*去掉选中时的蓝色边框*/
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+.clearFixed::before {
+  content: ".";
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html .page-index,
+body .page-index {
+  position: relative;
+  overflow: visible;
+}
+
+html .page-index #meizu-index-banner,
+body .page-index #meizu-index-banner {
+  position: relative;
+  height: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap,
+body .page-index #meizu-index-banner .meizu-header-wrap {
+  position: relative;
+  width: 1240px;
+  height: 82px;
+  margin: 0 auto;
+  z-index: 88;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-logo,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-logo {
+  width: 120px;
+  height: 30px;
+  padding: 26px 0;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-logo a,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-logo a {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 30px;
+  text-transform: uppercase;
+  list-style: none;
+  color: #7e7575;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link {
+  position: relative;
+  margin-left: 43px;
+  display: block;
+  width: 761px;
+  height: 82px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link .meizu-hzder-link-down-view,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link .meizu-hzder-link-down-view {
+  position: absolute;
+  left: -110px;
+  width: 1080px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li {
+  float: left;
+  height: 100%;
+  font-size: 14px;
+  line-height: 82px;
+  margin: 0 20px 0;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li a,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li a {
+  color: #000;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search {
+  position: relative;
+  margin-top: 26px;
+  height: 30px;
+  margin-left: 40px;
+  width: 170px;
+  line-height: 82px;
+  border-radius: 15px;
+  border: 1px solid #666;
+  background-color: #fff;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search input,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search input {
+  display: block;
+  margin: 4px 0 3px 8px;
+  width: 127px;
+  height: 20px;
+  line-height: 30px;
+  border: none;
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search .iconfont,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search .iconfont {
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 140px;
+  height: 15px;
+  width: 15px;
+  font-size: 20px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user {
+  padding-top: 26px;
+  margin-left: 1174px;
+  width: 29px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user .iconfont,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user .iconfont {
+  width: 29px;
+  height: 29px;
+  color: #999;
+  font-size: 29px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user ul,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user ul {
+  display: none;
+  z-index: 1;
+  width: 98px;
+  background-color: #fff;
+  padding-top: 35px;
+  margin-left: 620px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px 0;
+  margin-left: -48px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user ul li,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user ul li {
+  line-height: 30px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user ul li a,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-user ul li a {
+  color: #000;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart {
+  margin-top: 26px;
+  width: 29px;
+  height: 29px;
+  margin-left: 10px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart .iconfont,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart .iconfont {
+  width: 29px;
+  height: 29px;
+  color: #999;
+  font-size: 29px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart div,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart div {
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 400px;
+  height: 150px;
+  background-color: #fff;
+  top: 40px;
+  right: 0;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 45px;
+  line-height: 30px;
+  margin-left: -48px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart a,
+body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-cart a {
+  display: block;
+}
+
+html .page-index #meizu-index-banner .meizu-banner-wrap,
+body .page-index #meizu-index-banner .meizu-banner-wrap {
+  width: 100%;
+  height: 5980px;
+  position: relative;
+}
+
+html .page-index #meizu-index-banner .meizu-banner-wrap .swiper-container,
+body .page-index #meizu-index-banner .meizu-banner-wrap .swiper-container {
+  position: absolute;
+  top: -82px;
+  left: calc(50% - 1280px);
+  width: 2560px;
+  height: 680px;
+  text-align: center;
+}
+
+html .page-index #meizu-index-banner .meizu-banner-wrap .swiper-container a,
+body .page-index #meizu-index-banner .meizu-banner-wrap .swiper-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+html .page-index #meizu-index-banner .meizu-banner-wrap .swiper-container a img,
+body .page-index #meizu-index-banner .meizu-banner-wrap .swiper-container a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+html .page-index #index-container .index-container-wrap,
+body .page-index #index-container .index-container-wrap {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+html .page-index #index-container .index-container-wrap .index-content,
+body .page-index #index-container .index-container-wrap .index-content {
+  height: 278px;
+}
+
+html .page-index #index-container .index-container-wrap .index-content .index-content-items,
+body .page-index #index-container .index-container-wrap .index-content .index-content-items {
+  width: 100%;
+  height: 100%;
+}
+
+html .page-index #index-container .index-container-wrap .index-content .index-content-items li,
+body .page-index #index-container .index-container-wrap .index-content .index-content-items li {
+  margin: 0 auto;
+  display: block;
+  width: 25%;
+  height: 185px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+html .page-index #index-container .index-container-wrap .index-content .index-content-items li a,
+body .page-index #index-container .index-container-wrap .index-content .index-content-items li a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+html .page-index #index-container .index-container-wrap .index-content .index-content-items li a img,
+body .page-index #index-container .index-container-wrap .index-content .index-content-items li a img {
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  margin: 40px 30% 0;
+}
+
+html .page-index #index-container .index-container-wrap .index-content .index-content-items li a h4,
+body .page-index #index-container .index-container-wrap .index-content .index-content-items li a h4 {
+  margin: 10px 0;
+  height: 29px;
+  color: #000;
+}
+
+html .page-index #index-container .index-container-wrap .index-content .index-content-items li a p,
+body .page-index #index-container .index-container-wrap .index-content .index-content-items li a p {
+  height: 21px;
+  color: #999;
+}
+
+html .page-index #index-container .index-container-wrap .section-box,
+body .page-index #index-container .index-container-wrap .section-box {
+  width: 100%;
+  min-height: 1005px;
+}
+
+html .page-index #index-container .index-container-wrap .section-box .section-title,
+body .page-index #index-container .index-container-wrap .section-box .section-title {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+html .page-index #index-container .index-container-wrap .section-box .section-title h3,
+body .page-index #index-container .index-container-wrap .section-box .section-title h3 {
+  font-size: 30px;
+  color: #000;
+  line-height: 45px;
+  text-align: center;
+}
+
+html .page-index #meizu-footer,
+body .page-index #meizu-footer {
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  width: 100%;
+  height: 246px;
+  font-size: 14px;
+  color: #515151;
+  position: relative;
+  background-color: #fff;
+}
+
+html .page-index #meizu-footer .meizu-footer-link,
+body .page-index #meizu-footer .meizu-footer-link {
+  width: 100%;
+  height: 177px;
+  padding: 48px 0 20px;
+  border-top: 1px solid #f1f1f1;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row {
+  max-width: 1240px;
+  height: 84px;
+  position: relative;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service {
+  width: 1000px;
+  height: 69px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li {
+  width: 150px;
+  height: 69px;
+  float: left;
+  text-align: center;
+  width: 15%;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li a,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li a {
+  line-height: 27px;
+  font-size: 12px;
+  color: #666;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li a img,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li a img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li a img span,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-row .meizu-footer-service li a img span {
+  line-height: 30px;
+  color: #999;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline {
+  width: 156px;
+  height: 102px;
+  float: right;
+  text-align: right;
+  margin-top: -18px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline span,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline span {
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline p,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline p {
+  max-height: 100%;
+  color: #008cff;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: -6px;
+  line-height: 40px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline a,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-hotline a {
+  height: 30px;
+  padding: 0 16px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 3px;
+  display: inline-block;
+  font-size: 14px;
+  background: #008cff;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .footer-hr,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .footer-hr {
+  margin: 10px auto 28px;
+  display: block;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co {
+  width: 1240px;
+  height: 54px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row {
+  max-width: 1240px;
+  position: relative;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info {
+  color: #999;
+  text-align: left;
+  font-size: 12px;
+  width: 1240px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left {
+  width: 942px;
+  height: 52px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul {
+  height: 18px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul li,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul li {
+  padding-right: 15px;
+  border-right: 1px solid #d6d6d6;
+  float: left;
+  height: 18px;
+  margin-right: 15px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul li a,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul li a {
+  display: block;
+  line-height: 18px;
+  color: #999;
+  font-size: 12px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul .no-border,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left ul .no-border {
+  width: 375px;
+  height: 18px;
+  border-right: none;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate {
+  width: 1240px;
+  height: 27px;
+  padding-top: 8px;
+  color: #999;
+  text-align: left;
+  font-size: 12px;
+  width: 100%;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate a,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate a {
+  color: #999;
+  line-height: 27px;
+  font-size: 12px;
+  margin: 0 3px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate a span,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate a span {
+  margin: 0 6px;
+  color: #999;
+  line-height: 27px;
+  font-size: 12px;
+  line-height: 27px;
+  font-size: 12px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate a span i,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate a span i {
+  width: 14px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+  *top: 2px;
+  display: inline-block;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASCAQAAADBVSe6AAABgUlEQVQYGQXBP2xMcQAA4O/3/tz17nptXZNKW4aiDAxiEGkstTchEZsYxIDFyGaw20wiJisxNEKIoQlpSMRSqaRpif6Jlqtq7867d8/3hQIAAADJNwS53SNhevFankw+9GrgayyzK6wg+HV/7mq5HhlUtbR35vHIzcyuiODf9Ze3Qr2k0BKMVt/e6F6OEdG69/RBxYQNO377YMSo2Ud7d2JRnm6eXzdsRU+hI/hkxHKyeqmWJNu3W8fLUl0cVLWopSTlZHE32plJBbFJqT5146Y0UbN9IWqfKhnyXte4NctymXcG9dk8HPWKwjEdn/WkaqrmtRzVFf9Lqt/DxISGn7YlShJNdYfk+pfCXPFHQ+SjdWNiX1RMG9A0JCw825jZiapGdRUyqWBL20B3+ElUudh4sU9LU6QtKOkoDKk8T68k7TEn+vXJ7EkUfihpyITT3QNRkpTn6SnLZdqqyjK1vD4bR2FZx+rU33OVs6X9YSDOo63KWvt1eNNYiIQCAAAA/wELq4aKpmcovgAAAABJRU5ErkJggg==);
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate .footer-info-license,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate .footer-info-license {
+  width: 20px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAQAAAD4MpbhAAABUklEQVQoU3XR32uSARjF8fc/r4u6qhYjnJA6paUi66UVro2mDSnaxsaWkNDSYsj22g+2slJ0r/rpwkRvOufmeeB78TznBNKuRDN3ojiab67UA9sTEzCxK6ngjwX1A+F0upD3VNeBpPoc6ATCiS82PbSvp2vgTEbeR8MpEIcbVpVFrg2NDfV01TyWE9EJ+uGad86NxIa+abg0dumToiM6wSBcd6Bn4IemkoS63/oaQh/oBMOwqKFtXcKS0IqElD3nSlrTGwpaXrkv5467lqXdUvFVwcX0i2e2/ZJ3W9qJB2664Y3PsrpToCavZU1W1pJlR6rKaoriKdCUUtF2punETyNDezIqs6Bij2yoa+kZi313bEdSewbQtOK5XfsOvbXtpVVb86jhUNKmqi07qnJKRotdQENKSdkTGRXXs7KiQMW/uvteC70QWVAcuOfU8X/8XvUvG8gIhChnbVQAAAAASUVORK5CYII=);
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate .footer-info-license i,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .meizu-footer-info-left .meizu-footer-certificate .footer-info-license i {
+  position: relative;
+  top: 4px;
+  *top: 2px;
+  display: inline-block;
+  height: 18px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe {
+  position: relative;
+  margin-top: 25px;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe a,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe a {
+  width: 40px;
+  height: 30px;
+  line-height: 27px;
+  font-size: 12px;
+  padding: 0 10px 0;
+  border-right: 1px solid #999;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe a i,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe a i {
+  font-size: 22px;
+  color: #666;
+}
+
+html .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe a img,
+body .page-index #meizu-footer .meizu-footer-link .meizu-footer-wrap .meizu-footer-co .meizu-row .meizu-footer-info .ii-subscribe a img {
+  position: absolute;
+  bottom: 40px;
+  left: -20px;
+  width: 180px;
+  display: none;
+  border: 0;
+}

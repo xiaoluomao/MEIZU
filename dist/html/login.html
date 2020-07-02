@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyme 账号 - 登录</title>
+    <meta name="description" content="欢迎登录和注册 Flyme 账号，您可以体验手机云服务功能，包括：在线下载应用，同步手机数据和查找手机等，让您的手机管理更加智能。" />
+    <meta name="keywords" content="魅族 meizu 登录flyme 云服务 查找手机 充值账号 MX M9 MX2" />
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1911524_acvab5iy1qt.css">
+</head>
+
+<body>
+    <div id="content">
+        <div class="header">
+            <a href="http://127.0.0.1:5500/dist/html/index.html">MEIZU</a>
+        </div>
+        <div class="bg-box">
+            <form action="" class="main-form">
+
+                <!-- 表格标题 -->
+                <div class="tab-title">
+                    <!-- <a href="http://127.0.0.1:5500/dist/html/register.html">注册 Flyme 账号</a> -->
+                    <a class="linkABlack" id="toAccountLogin" href="javascript:void(0);">账号登录</a>
+                    <span class="register-line"> | </span>
+                    <a class="linkAGray" id="toVCodeLogin" href="javascript:void(0);">二维码登录</a>
+                </div>
+
+                <!-- 手机号码 /Flyme账号-->
+                <div class="normalInput cycode-box show-cycode">
+                    <span class="cycode-selectBox">
+                        <input class="ipt-account inp-focus" name="account" id="userName" maxlength="50"
+                            placeholder="手机号/ Flyme 账号" autocomplete="off"  method="GET">
+                    </span>
+                </div>
+
+                <!-- 密码 -->
+                <div class="pass-box">
+                    <input type="password" class="inp-focus aaa" name="password" id="password" maxlength="16"
+                        autocomplete="off" placeholder="密码" method="GET">
+                </div>
+
+                <!-- 刷新/状态 -->
+                <div class="refresh-box">
+                    <a href="http://www.geetest.com/first_page" id="nextStep" class="register-btn" target="_blank">刷新</a>
+                </div>
+
+                <!-- 是否记住登录状态 -->
+                <p class="remeber-box">
+                    <input type="checkbox" class="checkboxPic check_unchk">
+                    <i class="i_icon"></i>
+                    </input>
+                    <label for="remember" tabindex="0">记住登录状态</label>
+                </p>
+
+                <!-- 登录 -->
+                <div class="login-box">
+                    <a href="http://127.0.0.1:5500/dist/html/login.html" id="toLlogin" class="register-btn" target="_blank">登录</a>
+                </div>
+
+                <!-- 注册/忘记密码 -->
+                <p class="transfer-field">
+                    <a class="go2register linkABlue float-left"
+                        href="http://127.0.0.1:5500/dist/html/register.html"
+                        id="toRegister">注册</a>
+                    <a class="go2forgetpwd linkABlue rememberFieldForA float-right" href="https://i.flyme.cn/forgetpwd"
+                        target="_Blank">忘记密码?</a>
+                </p>
+            </form>
+        </div>
+
+        <div class="flymeFooter">
+            <div class="footerInner">
+                <div class="footer-layer1">
+                    <div class="footer-innerLink float-left">
+                        <ul>
+                            <li class="float-left"><a href="#" target="_blank" title="">关于魅族</a></li>
+                            <li class="float-left"><a href="#" target="_blank" title="">工作机会</a></li>
+                            <li class="float-left"><a href="#" target="_blank" title="">联系我们</a></li>
+                            <li class="float-left"><a href="#" target="_blank" title="">法律声明</a></li>
+                            <li class="float-left"><a href="#" target="_blank" title="">常见问题</a></li>
+                            <li class="float-left"><a href="#" target="_blank" title="">简体中文</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-service float-left">
+                        <ul>
+                            <li class="float-left"><span>客服热线</span></li>
+                            <li class="float-left"><span>400-788-3333</span></li>
+                            <li class="float-left"><a href="#" class="noRight">在线客服</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-outerLink float-right">
+                        <ul>
+                            <li class="float-left">
+                                <a href="http://weibo.com/meizumobile" target="_blank" id="toWeibo">
+                                    <i class="iconfont icon-weibo"></i>
+                                </a>
+                            </li>
+                            <li class="float-left">
+                                <a href="javascript:void(0);" target="_blank">
+                                    <i class="iconfont icon-weixin"></i>
+                                </a>
+                            </li>
+                            <li class="float-left">
+                                <a href="http://user.qzone.qq.com/2762957059" target="_blank" id="toQzone">
+                                    <i class="iconfont icon-qqkongjian"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer-layer2">
+                    <span>©
+                        <script type="text/javascript">document.write(new Date().getFullYear());</script>2020 Meizu
+                        Telecom Equipment Co., Ltd. All rights reserved.</span>
+                    <a href="http://www.miitbeian.gov.cn/" class="linkAGray" target="_blank">备案号: 粤ICP备13003602号-4</a>
+                    <a href="http://www3.res.meizu.com/static/cn/widget/footer/images/icp2_b2dcb54.jpg"
+                        class="linkAGray" target="_blank">经营许可证编号: 粤B2-20130198</a>
+                    <a target="_blank" href="http://www2.res.meizu.com/zh_cn/images/common/com_licence.jpg"
+                        hidefocus="true" class="linkAGray">营业执照</a>
+                    <a target="_blank"
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496076"
+                        style="background: url('https://uc-res.mzres.com/resources/uc/wlogin/member/images/ghs.png') no-repeat; background-size: 15px 14px; padding-left: 18px;background-position-y: center;">粤公网安备
+                        44049102496076号</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script/login.js"></script>
+</body>
+
+</html>

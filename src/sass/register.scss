@@ -1,0 +1,249 @@
+@import "reset.scss";
+
+body,
+html {
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #FFF;
+    margin: 0;
+    color: #515151;
+
+    #content {
+        width: 100%;
+        position: relative;
+        min-height: 750px;
+        max-height: 1080px;
+        background-image: linear-gradient(rgb(237, 252, 253) 0%, rgb(250, 255, 255) 100%);
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat-x: initial;
+        background-repeat-y: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+        background: url(../imgs/index/pic-flyme.png) no-repeat;
+        background-position: 50% 50%;
+        background-image: 100% 680px;
+        padding-top: 20px;
+
+        .header {
+            width: 1240px;
+            margin: 0 auto;
+            position: relative;
+
+            a {
+                display: block;
+                width: 110px;
+                height: 20px;
+                font-size: 20px;
+                color: #2ABDEF;
+                font-weight: 700;
+            }
+        }
+
+        .bg-box {
+            position: relative;
+            width: 1240px;
+            height: 750px;
+            margin: 0 auto;
+
+            .main-form {
+                width: 298px;
+                height: 422px;
+                padding: 72px 35px 20px;
+                position: absolute;
+                top: 15%;
+                right: 85px;
+                background-color: #fff;
+                border-radius: 2px;
+                box-shadow: 0 6px 12px 0 rgba(138, 153, 150, 1.15);
+
+                .tab-title {
+                    width: 298px;
+                    height: 24px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        margin: 0 auto;
+                        color: #00a7ea;
+
+                        &:hover {
+                            color: #387aff;
+                        }
+                    }
+                }
+
+                .normalInput {
+                    font-size: 18px;
+                    display: block;
+                    height: 46px;
+                    overflow: visible;
+                    margin-top: 100px;
+                    border-radius: 2px;
+                    padding: 0 10px;
+                    width: 276px;
+                    line-height: 50px;
+                    border: 1px solid #dadada;
+
+                    span {
+                        width: 60px;
+                        height: 45px;
+                        border-right: 1px solid #eee;
+
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .ipt-phone {
+                        margin: 14px 16px 0;
+                        border: none;
+                    }
+
+                }
+
+                .verify-box {
+                    font-size: 16px;
+                    display: block;
+                    overflow: visible;
+                    margin-top: 40px;
+                    border-radius: 2px;
+                    width: 296px;
+                    height: 48px;
+                    border: 1px solid #dadada;
+
+                    input {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+                }
+
+                .register-box {
+                    display: inline-block;
+                    height: 50px;
+                    width: 298px;
+                    font-size: 20px;
+                    line-height: 50px;
+                    text-align: center;
+                    margin-top: 70px;
+                    *margin-bottom: 10px;
+                    outline: none;
+                    cursor: pointer;
+                    background-color: #387AFF;
+                    border-radius: 2px;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                .login-box {
+                    width: 100%;
+                    height: 20px;
+                    margin-top: 10px;
+
+                    a {
+                        color: #387AFF;
+                    }
+
+                }
+            }
+        }
+
+        .flymeFooter {
+            position: relative;
+            height: 130px;
+
+            .footerInner {
+                position: relative;
+                width: 1000px;
+                height: 60px;
+                margin: 24px auto 30px;
+
+                .footer-layer1 {
+                    position: relative;
+                    width: 100%;
+                    line-height: 50px;
+                    margin: 0 auto;
+
+                    .footer-innerLink {
+                        height: 50px;
+
+                        li {
+                            line-height: 50px;
+                            padding-right: 10px;
+
+                            a {
+                                padding-right: 10px;
+                                border-right: 1px solid #000;
+                                color: #000;
+
+                                &:nth-last-child() {
+                                    border-right: none;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .footer-service {
+                        height: 100%;
+                        margin-left: 36px;
+
+                        li {
+                            line-height: 50px;
+                            padding-right: 10px;
+
+                            a {
+                                background-color: #32A5E7;
+                                color: #FFF;
+                            }
+
+                        }
+                    }
+
+                    .footer-outerLink {
+                        position: relative;
+
+                        li {
+                            line-height: 50px;
+                            width: 32px;
+                            height: 32px;
+                            margin-left: 15px;
+
+                            .iconfont {
+                                font-size: 30px;
+                                color: #A8A8A8;
+
+                            }
+
+                            .icon-kongjian {
+                                font-size: 38px;
+
+                            }
+
+                        }
+                    }
+                }
+
+                .footer-layer2 {
+                    position: absolute;
+                    bottom: 0;
+                    height: 18px;
+                    font-size: 12px;
+
+                    a {
+                        color: #A8A8A8;
+                    }
+
+                }
+            }
+        }
+    }
+}
