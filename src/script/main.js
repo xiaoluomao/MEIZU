@@ -6,6 +6,7 @@ require.config({
     path: {
         "jquery": "jquery-1.11.3",
         "jquery-cookie": "jquery-cookie",
+        // "login": "login",
         "parabola": "parabola"
 
     },

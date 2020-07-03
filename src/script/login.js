@@ -1,61 +1,35 @@
 console.log("login.js加载成功");
-// $(function () {}
+
 
 // 登录
-$('#toLogin').click(function () {
-    $.ajax({
-        url: '../mian.php',
-        type: 'get',
-        data: {
-            type: 'login',
-            userName: userName.value,
-            password: password.value
-        },
-        cache: false,//不读取缓存
-        dataType: 'text',//返回的数据类型
-        success: function (data) {
-            $('.show').text(data);
-        },
-        error: function (err) {
-            console.log(err);
-        }
 
-    })
-});
-
-// 注册
-$('#toRegister').click(function () {
-    $.ajax({
-        url: '../main.php',
-        type: 'get',
-        data: {
-            type: 'register',
-            user: userName.value,
-            password: password.value
-        },
-        cache: false,//不读取缓存
-        dataType: 'text',//返回的数据类型
-        success: function (data) {
-            $('.show').text(data);
-        },
-        error: function (err) {
-            console.log(err);
-        }
-
-    })
-});
-
-// // 刷新
-// $('#nextStep').click(function(){
-
-// });
-// // 记住登录状态
-// $('.check_unchk').click(function(){
-
-// });
-
-// // 忘记密码
-// $('.go2forgetpwd').click(function(){
-
-// });
-
+$('#toLlogin').click(function () {
+    if ($("#userName").val().trim() == "") {
+        $("#userName").text("账户不能为空");
+        return;
+    } else if ($("#password").val().trim() == "") {
+        $("#password").text("密码不能为空");
+        return;
+    } else {
+        $.ajax({
+            url: 'http://127.0.0.1:5500/dist/php/mian.php',
+            type: 'get',
+            data: {
+                userName: $("#userName").val(),
+                password: $("#password").val(),
+            },
+            success: function (data) {
+                var go = JSON.parse(data);
+                if (go.stat == -1) {
+                    alert(go.msg);
+                }
+                if (go.stat == 200) {
+                    // alert(go.msg);
+                    window.location.href="http://127.0.0.1:5500/dist/html/index.html";
+                }
+                // $("#password").val('');
+                // $("#userName").val('');
+            }
+        })
+    }
+})

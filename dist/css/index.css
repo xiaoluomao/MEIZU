@@ -119,25 +119,18 @@ body {
           display: block;
           width: 761px;
           height: 82px; }
-          html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link .meizu-hzder-link-down-view,
-          body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link .meizu-hzder-link-down-view {
-            position: absolute;
-            left: -110px;
-            width: 1080px;
-            height: 200px;
-            margin: 0 auto;
-            text-align: center;
-            background-color: #fff; }
-          html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li,
-          body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li {
-            float: left;
+        html .page-index #meizu-index-banner .meizu-header-wrap li,
+        body .page-index #meizu-index-banner .meizu-header-wrap li {
+          float: left;
+          height: 100%;
+          font-size: 14px;
+          line-height: 82px;
+          margin: 0 20px 0; }
+          html .page-index #meizu-index-banner .meizu-header-wrap li a,
+          body .page-index #meizu-index-banner .meizu-header-wrap li a {
+            width: 100%;
             height: 100%;
-            font-size: 14px;
-            line-height: 82px;
-            margin: 0 20px 0; }
-            html .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li a,
-            body .page-index #meizu-index-banner .meizu-header-wrap .meizu-hezder-link li a {
-              color: #000; }
+            color: #000; }
         html .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search,
         body .page-index #meizu-index-banner .meizu-header-wrap .meizu-header-search {
           position: relative;
